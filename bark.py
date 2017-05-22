@@ -14,14 +14,12 @@ def paragraph():
 	print "\n"
 
 if __name__ == "__main__":
-	if len(argv) < 2:
-		paragraph()
-		paragraph()
-		paragraph()
-	else:
+	numpars = 3
+	if len(argv) > 1:
 		numpars = int(argv[1])
-		for i in range(0,numpars):
-			paragraph()
+	
+	for i in range(0,numpars):
+		paragraph()
 
 	print "BARK BARK,"
 	print " DOGGO"
